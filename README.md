@@ -11,5 +11,4 @@ List of tasks in this code:
 - Thoroughly analyzing results with various models and datasets.
 - Harnessing the power of depth map generation and image segmentation to refine steering command predictions.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/S_aP-RwHZb0?si=3S-V2P_Y3QRSxC78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
