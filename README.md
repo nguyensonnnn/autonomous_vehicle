@@ -11,4 +11,5 @@ List of tasks in this code:
 - Thoroughly analyzing results with various models and datasets.
 - Harnessing the power of depth map generation and image segmentation to refine steering command predictions.
 
+![Screenshot 2023-10-17 001751](https://github.com/nguyensonnnn/autonomous_vehicle/assets/140680983/b12aab4b-cf0a-40d8-a140-bacc7230dea1)
 
