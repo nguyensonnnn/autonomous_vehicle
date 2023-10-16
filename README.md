@@ -3,13 +3,11 @@ This is source code of the part of my research project in ISAE SUPAERO master pr
 
 # intro
 Welcome to our exciting autonomous car development project! Our ultimate aim is to transform a manual car into a fully autonomous vehicle. The project encompasses comprehensive phases including research, simulation, assembly, and rigorous testing. Currently, we are at the initial stages, primarily focused on research and simulation. One key aspect we're delving into is the implementation of visual perception. This empowers the car to intelligently perceive its surroundings, encompassing the road, ground, and potential obstacles. Additionally, we're employing an alternative method to generate depth maps, enhancing the accuracy of our algorithms.
+List of tasks in this code: 
+- Implementing object detection utilizing convolutional neural networks.
+- Producing a detailed depth map of the environment.
+- Proposing and evaluating a cutting-edge image semantic segmentation model.
+- Utilizing a combination of image convolutional neural networks and fully connected neural networks to enable the car to predict steering commands.
+- Thoroughly analyzing results with various models and datasets.
+- Harnessing the power of depth map generation and image segmentation to refine steering command predictions.
 
-Furthermore, we're pioneering a novel motion planning strategy, allowing the car to acquire complex driving skills akin to a human driver.
-This code include:
-
-Implementing object detection utilizing convolutional neural networks.
-Producing a detailed depth map of the environment.
-Proposing and evaluating a cutting-edge image semantic segmentation model.
-Utilizing a combination of image convolutional neural networks and fully connected neural networks to enable the car to predict steering commands.
-Thoroughly analyzing results with various models and datasets.
-Harnessing the power of depth map generation and image segmentation to refine steering command predictions.
