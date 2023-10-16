@@ -11,5 +11,41 @@ List of tasks in this code:
 - Thoroughly analyzing results with various models and datasets.
 - Harnessing the power of depth map generation and image segmentation to refine steering command predictions.
 
+
+
+# Neural network learning model 
+
+This model is inspired by the Dave system of NVIDIA https://developer.nvidia.com/blog/deep-learning-self-driving-cars/ with DAVE system with 2 cameras to
+perform steering and adjusting thrust based on pre-trained model. However, NVIDIA has not
+clarified the process of training this model architecture as well as evaluate its performance in
+general. The model is described in the picture below.
+
+![Screenshot 2023-10-17 002425](https://github.com/nguyensonnnn/autonomous_vehicle/assets/140680983/c37602bc-b478-4cb3-8ba9-3e911fad9da4)
+
+• The first set of layers contain of 5 convolutional neural layers, which is used for extracting
+the basic information relating to the surrounding environment of images perceived from the
+camera is called the sensory neurons. Sensory neurons are performed convolution by the
+kernel of size 3x3 with the stride of 2 in the first three layers and the kernel of size 2x2 in
+two last layers with the stride of 1.
+• The second set of layers contain of 4 fully connected neural layers to interpret the extract
+feature from the images to the steering command.
+In order to research the different between these layers, there are some modifications is applied to
+research the optimal result of this model such as add more layer, dropout at different stage of
+model. The final results is demonstrated on chapter 5. These modifications are:
+• Adding 1 more convolutional layer and 1 more neural network layer with the purpose of
+achieving better understanding the image and more accurate interpretation.
+• Adding 1 more neural network layer and delete one convolutional neural network. In this
+case, filtered dataset is used so the image has already been splitted into different pattern and
+it becomes redundant if there are two many sensory neurons on the networks instead of
+more regular neurons to interpret the image feature
+
+# Result 
+The error of the prediction is given as below 
 ![Screenshot 2023-10-17 002014](https://github.com/nguyensonnnn/autonomous_vehicle/assets/140680983/897d2dbf-471b-4f13-83a3-95af613ef234)
 
+It is crucial to mention that this error is not big enough to affect the safety of the car because, the
+predicted values are recorded from the control wheel and based on the normal steering ratio of
+ordinary cars nowadays, the car in real life only change its steering angle 0.243-0.275 degrees. In
+addition, although there are some large errors at certain frame such as 300 degrees and 350 degrees,
+this error only occurs for 1 frame lasting 33 milliseconds. Nevertheless, there must be some
+augmentations need to be applied to enhance the overall performance
